@@ -1,1 +1,7 @@
+test_random/1.jpeg
+test_random/33669.jpeg
+test_random/cardigans1.jpg
+test_random/child.jpeg
 test_random/dog.jpg
+test_random/don.jpg
+test_random/golden-retriever-royalty-free-image-506756303-1560962726.jpg
