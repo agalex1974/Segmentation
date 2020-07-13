@@ -84,7 +84,10 @@ def main():
         transform.Resize(args.scale_image),
         transform.ToTensor()
     ])
-    test_data = dataset.SemData(split=args.split, data_root=args.data_root, data_list=args.test_list, transform=test_transform)
+    test_list = args.test_list
+    if (args.split == 'pca'):
+      test_list = args.pca_list
+    test_data = dataset.SemData(split=args.split, data_root=args.data_root, data_list=test_list, transform=test_transform)
     index_start = args.index_start
     if args.index_step == 0:
         index_end = len(test_data.data_list)
